@@ -14,36 +14,45 @@
         </fieldset>
         <p>
             <label for="">What is your age range ?</label><br>
-            <input type="number" min="18" max="24">
+            <input style="width: 230px;" type="number" size="50" min="18" max="24" name="age">
         </p>
         <p>
             <label for="">What is your yearly income range ?</label><br>
-            <input type="number" min="$0" max="$25,000">
+            <input style="width: 230px;" type="number" min="$0" max="$25,000" name="income_range">
         </p>
         <p>
             <label for="">Gender</label><br>
-            <input type="radio" name="gender"> Male <br>
-            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender" value="Male"> Male <br>
+            <input type="radio" name="gender" value="Female"> Female
         </p>
         <p>
             <label for="">Which of the following products have your purchased in the last 2 months. Please check all that apply</label><br>
-            <input type="checkbox" name="Product 1"> Product 1<br>
-            <input type="checkbox" name="Product 2"> Product 2<br>
-            <input type="checkbox" name="Product 3"> Product 3<br>
+            <input type="checkbox" name="product_1" value="Product1">Product 1<br>
+            <input type="checkbox" name="product_2" value="Product2">Product 2<br>
+            <input type="checkbox" name="product_3" value="Product3">Product 3<br>
         </p>
         <p>
             <label for="">How often would you use our new product ?</label><br>
-            <input type="radio" name="level"> Daily<br>
-            <input type="radio" name="level"> Weekly<br>
-            <input type="radio" name="level"> Monthly<br>
+            <input type="radio" name="level" value="Daily">Daily<br>
+            <input type="radio" name="level" value="Weekly">Weekly<br>
+            <input type="radio" name="level" value="Monthly">Monthly<br>
         </p>
         <p>
-            <label for="">What would you pay for the new product ?</label><br>
-            $ 
-            <span>
-                <input type="number" name="dollars" size="30"> . <input type="number" name="cents" size="10">cents<br>
-                Dollars                                           
-            </span> 
+            <label for="">What would you pay for the new product ?</label><br>            
+            <table>
+                <tr>
+                    <td>
+                        $ <input type="number" name="dollars" size="30"> .
+                    </td>
+                    <td>
+                        <input type="number" name="cents" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dollars</td>
+                    <td>Cent</td>
+                </tr>
+            </table>
         </p>
         <p>
             <label for="">What features would you like to see in the new product.</label>
@@ -62,46 +71,46 @@
                 <tr>
                     <th>Our products are priced fairly</th>
                     <td>
-                        <input type="radio" name="fairly"><br>1
+                        <input type="radio" name="fairly" value="Strongly Disagree"><br>1
                     </td>
                     <td>
-                        <input type="radio" name="fairly"><br>2
+                        <input type="radio" name="fairly" value="Disagree"><br>2
                     </td>
                     <td>
-                        <input type="radio" name="fairly"><br>3
+                        <input type="radio" name="fairly" value="Agree"><br>3
                     </td>
                     <td>
-                        <input type="radio" name="fairly"><br>4
+                        <input type="radio" name="fairly" value="Strongly Agree"><br>4
                     </td>
                 </tr>
                 <tr>
                     <th>Our products are high quality</th>
                     <td>
-                        <input type="radio" name="high quality"><br>1
+                        <input type="radio" name="high quality" value="Strongly Disagree"><br>1
                     </td>
                     <td>
-                        <input type="radio" name="high quality"><br>2
+                        <input type="radio" name="high quality" value="Disagree"><br>2
                     </td>
                     <td>
-                        <input type="radio" name="high quality"><br>3
+                        <input type="radio" name="high quality" value="Agree"><br>3
                     </td>
                     <td>
-                        <input type="radio" name="high quality"><br>4
+                        <input type="radio" name="high quality" value="Strongly Agree"><br>4
                     </td>
                 </tr>
                 <tr>
                     <th>Your would recommend our product to a friend or coworker</th>
                     <td>
-                        <input type="radio" name="recomment"><br>1
+                        <input type="radio" name="recomment" value="Strongly Disagree"><br>1
                     </td>
                     <td>
-                        <input type="radio" name="recomment"><br>2
+                        <input type="radio" name="recomment" value="Disagree"><br>2
                     </td>
                     <td>
-                        <input type="radio" name="recomment"><br>3
+                        <input type="radio" name="recomment" value="Agree"><br>3
                     </td>
                     <td>
-                        <input type="radio" name="recomment"><br>4
+                        <input type="radio" name="recomment" value="Strongly Agree"><br>4
                     </td>
                 </tr>
             </table>
