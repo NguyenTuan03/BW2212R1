@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Thanh toán</h2>
+    </header>
+    <main>
+        <form action="">
+            <p>
+                <label for="">Tên đầy đủ</label>
+                <input type="text" placeholder="Nhập tên đầy đủ người mua hàng" size="50"><br>
+            </p>
+            <p>
+                <label for="">Password</label>
+                <input type="password" placeholder="Nhập Password" size="30"><br>
+            </p>
+            <p>
+                <label for="">Email</label>
+                <input type="email" placeholder="Nhập email"><br>
+            </p>
+            <p>
+                <label for="">Ngày sinh</label>
+                <input type="date"><br>
+            </p>
+            <p>
+                <label for="">Mặt hàng mua</label>
+                <input type="text" list="shop">
+                <datalist id="shop">
+                    <option value="Shoes"></option>
+                    <option value="Socks"></option>
+                    <option value="Shirt"></option>
+                    <option value="Sandals"></option>
+                    <option value="Trousers"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="">Số lượng mua</label>
+                <input type="number" min="1" max="5"><br>
+            </p>
+            <p>
+                <label for="">bán kính vận chuyển</label>
+                <input type="range" min="10" max="20"><br>
+            </p>
+            <button>Đăng kí</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <form action="">
+            <strong>Simple form with name and age</strong><br>
+            <label for="">Name:</label>
+            <input class="name" type="text"><br>
+            <label for="">Age:</label>
+            <input class="age" type="number">
+            <!-- <button>Add</button> -->
+        </form>
+    </header>
+    <main>
+        <table border="1" cellpadding="4px">
+            <thead>
+                <tr>
+                    <td></td>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="delete" style="color: blue; text-decoration: underline;">Delete</button>
+                    </td>
+                    <td>John</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="delete" style="color: blue; text-decoration: underline;">Delete</button>
+                    </td>
+                    <td>Mike</td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="delete" style="color: blue; text-decoration: underline;">Delete</button>
+                    </td>
+                    <td>Albert</td>
+                    <td>39</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p>
+            <button onclick="add()" style="color: blue; text-decoration: underline;">Click here</button>
+            <span>To create a Table and some data using javascript</span>
+        </p>
+    </main>
+</body>
+<script>
+    var arrAdd = [];
+    function add()
+    {
+        var id=0;
+        var name = document.querySelector('.name').value;
+        var age = document.querySelector('.age').value;
+        var item = {
+            id:id,
+            name:name,
+            age:age
+        }
+        if (name != "" && age != "")
+        {
+            arrAdd.push(item);
+            render();
+            clear();
+        }
+    }
+    function render()
+    {       
+        var table = "";
+        for (let i=0;i<arrAdd.length;i++)
+        {
+            arrAdd[i].id++;
+            table+= `
+            <tr>
+                <td
+                    <button onclick="deleteBtn(${arrAdd[i].id})" style="color: blue; text-decoration: underline;">Delete</button>
+                </td>
+                <td>${arrAdd[i].name}</td>
+                <td>${arrAdd[i].age}</td>
+            </tr>
+            `
+        }
+        document.querySelector('tbody').innerHTML = table;
+    } 
+    function clear()
+    {
+        document.querySelector('.name').value = "";
+        document.querySelector('.age').value = "";
+    }
+    function deleteBtn(idUser)
+    {
+        for (let i=0;i<arrAdd.length;i++)
+        {
+            if (idUser == arrAdd[i].id)
+            {
+                arrAdd.splice(i,1);
+                render();
+            }
+        }
+    }
+    var deleteUser = document.querySelectorAll('.delete');
+    for (let i=0;i<deleteUser.length;i++)
+    {
+        deleteUser[i].onclick = function()
+        {
+            deleteUser[i].parentElement.parentElement.remove();
+        }
+    }
+</script>
+</html>

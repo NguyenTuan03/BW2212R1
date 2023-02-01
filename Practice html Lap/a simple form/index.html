@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 style="color: purple;">A simple Form</h1>
+        <h3 style="color: red;">Form fundamental</h3>
+    </header>
+    <table width="100%">
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Customer Info</legend>
+                        <p>
+                            <label for="">Name: </label>
+                            <input type="text" placeholder="Enter your name" size="50">
+                        </p>
+                        <p>
+                            <label for="">Telephone: </label>
+                            <input type="text" placeholder="Pattern: 1-234-567-8910" size="50"><br>
+                        </p>
+                        <p>
+                            <label for="">E-mail address</label>
+                            <input type="text" placeholder="Enter yout email address" size="50"><br>
+                        </p>
+                        <p>
+                            <label for="">Gender: </label>
+                            <input type="radio" id="male" value="male" name="gender">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" value="female" name="gender">
+                            <label for="female">Female</label>
+                        </p>
+                        <p>
+                            <label for="">Hobbies: </label>
+                            <input type="checkbox" id="Basketball">
+                            <label for="Basketball">Basketball</label>
+                            <input type="checkbox" id="football">
+                            <label for="football">Football</label>
+                            <input type="checkbox" id="Badminton">
+                            <label for="Badminton">Badminton</label>
+                        </p>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table width="100%">
+        <tr>
+            <td>
+                <form action="">
+                    <fieldset>
+                        <legend>Books</legend>
+                        <label for="">Name: </label>
+                        <input type="text" size="50">
+                        <label for="">Quantity (Maximun 5): </label>
+                        <input type="number" size="50" min="1" max="5">
+                    </fieldset>
+                </form>
+            </td>
+        </tr> 
+    </table>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</body>
+</html>
