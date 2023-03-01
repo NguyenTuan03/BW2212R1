@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+.container {
+    width: 50%;
+    height:300px;
+    margin: 30px auto;
+    background-color: green;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    padding: 20px 10px;
+    grid-gap: 0 10px;
+}
+.item {
+    background-color: #fff;    
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+}

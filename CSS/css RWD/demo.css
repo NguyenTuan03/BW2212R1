@@ -8,7 +8,7 @@ main {
     grid-template-columns: 70% 30%;
 }
 .news {
-    margin: 12px;
+    margin: 12px 0 0 12px;
     border: 1px solid #bab4b4a8;
 }
 .news h1 {
@@ -44,7 +44,7 @@ main {
     margin:12px;
 }
 .right {
-    margin: 12px;
+    margin: 12px 12px 0 0;
 }
 .blog,
 .hot-news {

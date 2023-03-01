@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./LoveTravel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Hover-master/css/hover-min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <title>Travel WordPress Theme</title>
+</head>
+<body>
+    <header>
+        <div class="header_left">
+            <ul class="header__options">
+                <li class="header__option--link">
+                    <a href="#">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Payment Options
+                    </a>
+                </li>
+                <li class="header__option--link">
+                    <a href="#">
+                        <i class="fa-solid fa-square-check"></i>
+                        Terms Conditions
+                    </a>
+                </li>
+                <li class="header__option--link">
+                    <a href="#">US</a>
+                </li>
+                <li class="header__option--link">
+                    <a href="#">IT</a>
+                </li>
+                <li class="header__option--link">
+                    <a href="#">ES</a>
+                </li>
+            </ul>
+            <i style="display: none;" class="fa-solid fa-bars header_left-menu"></i>    
+        </div>
+        <div class="header_right">
+            <ul class="header__info">
+                <li class="header__info--link">
+                    <a href="">My Bookings</a>
+                </li>
+                <li class="header__info--link">
+                    <a href="">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+                <li class="header__info--link">
+                    <a href="">Add your Review</a>
+                </li>
+                <li class="header__info--link header__info-user">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="header__account">
+                        <div class="header__account-user">My Account</div>
+                        <div class="header__account-login">Log in</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div style="display: none;" class="header__login">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            Login
+        </div>
+        <div class="arrow-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <div class="nav-title">LOVE
+                 <span>Travel</span>
+            </div>
+            <ul class="nav-title__list">
+                <li class="nav-title__list--link">
+                    <a href="#home">HOME</a>
+                </li>
+                <li class="nav-title__list--link">
+                    <a href="#Packages">PACKAGES</a>
+                </li>
+                <li class="nav-title__list--link">
+                    <a href="#Shop">SHOP</a>
+                </li>
+                <li class="nav-title__list--link">
+                    <a href="#AboutUs">ABOUT US</a>
+                </li>
+                <li class="nav-title__list--link">
+                    <a href="#">PAGES</a>
+                </li>
+                <li class="nav-title__list--link">
+                    <a href="#">NEWS</a>
+                </li>
+                <li class="nav-title__list--link">
+                    <a href="#">CONTACT</a>
+                </li>
+                <div class="action"></div>
+            </ul>
+            <div class="nav-booking">Book now</div>
+        </nav>
+        <div id="home" class="main-image">
+            <img class="main-image--img" src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/parallax-2.jpg" alt="paris nghit">
+            <div class="main-img__text">
+                <span class="text-1">PARIS</span>
+                <span class="text-2">TOUR</span>
+                <span class="text-3">EIFFEL</span>
+                <span class="text-4">CITY</span>
+                <span class="text-5">TOUR</span>
+                <span class="text-6">1.500</span>
+                <span class="text-7">SALES</span>
+                <span class="text-8">$</span>
+            </div>
+            <div class="search-item">
+                <div class="search-quick">
+                    <div class="search-quick__name">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Quick search
+                    </div>
+                    <div class="search-advanced">
+                        <i class="fa-sharp fa-solid fa-users"></i>
+                        ADVANCED
+                    </div>
+                </div>
+                <form class="search-form" action="">
+                    <input size="27" type="text" class="search-destination" placeholder="Insert Keyword">
+                    <select style="-webkit-appearance: none;" class="search-destination">
+                        <option value="All Destination">All Destination</option>
+                        <option value="Europe">Europe</option>
+                        <option value="England"> - England</option>
+                        <option value="Italy"> - Italy</option>
+                        <option value="Asia">Asia</option>
+                        <option value="America">America</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                    <select style="-webkit-appearance: none;" class="search-destination">
+                        <option value="All Tyoplogies">All Tyoplogies</option>
+                        <option value="Relax">Relax</option>
+                        <option value="Cultural">Cultural</option>
+                        <option value="Sport">Sport</option>
+                        <option value="History">History</option>
+                    </select>
+                    <button>SEARCH</button>
+                </form>
+            </div>
+        </div>
+        <div id="Packages" class="top-promotion">
+            <h1 class="top-promotion-header">Top Promotions</h1>
+            <p class="top-promotion-desc">Best Travel Packages Available</p>
+            <div class="top-promotion__contain">
+                <div class="top-promotion__contain-list">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-berlin.jpg" alt="">
+                    <div class="top-promotion__contain-list-country">Berlin</div>
+                    <ul class="top-promotion__contain-list-type">
+                        <li class="top-promotion__contain-list-type__list">Europe</li>
+                        <li class="top-promotion__contain-list-type__list">Cultural</li>
+                    </ul>
+                    <div class="top-promotion__contain-list-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
+                    <button class=" hvr-shutter-out-horizontal top-promotion__contain-list-btn">Details</button>
+                </div>
+                <div class="top-promotion__contain-list">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-newdelhi.jpg" alt="">
+                    <div class="top-promotion__contain-list-country">New Delhi</div>
+                    <ul class="top-promotion__contain-list-type">
+                        <li class="top-promotion__contain-list-type__list">Asia</li>
+                        <li class="top-promotion__contain-list-type__list">History</li>
+                    </ul>
+                    <div class="top-promotion__contain-list-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
+                    <button class=" hvr-shutter-out-horizontal top-promotion__contain-list-btn">Details</button>
+                </div>
+                <div class="top-promotion__contain-list">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-london.jpg" alt="">
+                    <div class="top-promotion__contain-list-country">London</div>
+                    <ul class="top-promotion__contain-list-type">
+                        <li class="top-promotion__contain-list-type__list">England</li>
+                        <li class="top-promotion__contain-list-type__list">Sport</li>
+                    </ul>
+                    <div class="top-promotion__contain-list-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
+                    <button class=" hvr-shutter-out-horizontal top-promotion__contain-list-btn">Details</button>
+                </div>
+                <div class="top-promotion__contain-list">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-cuba.jpg" alt="">
+                    <div class="top-promotion__contain-list-country">Cuba</div>
+                    <ul class="top-promotion__contain-list-type">
+                        <li class="top-promotion__contain-list-type__list">America</li>
+                        <li class="top-promotion__contain-list-type__list">Relax</li>
+                    </ul>
+                    <div class="top-promotion__contain-list-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
+                    <button class=" hvr-shutter-out-horizontal top-promotion__contain-list-btn">Details</button>
+                </div>
+                <div class="top-promotion__contain-list">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-rome.jpg" alt="">
+                    <div class="top-promotion__contain-list-country">Rome</div>
+                    <ul class="top-promotion__contain-list-type">
+                        <li class="top-promotion__contain-list-type__list">Italy</li>
+                        <li class="top-promotion__contain-list-type__list">History</li>
+                    </ul>
+                    <div class="top-promotion__contain-list-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
+                    <button class=" hvr-shutter-out-horizontal top-promotion__contain-list-btn">Details</button>
+                </div>
+                <div class="top-promotion__contain-list">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-dubai.jpg" alt="">
+                    <div class="top-promotion__contain-list-country">Dubai</div>
+                    <ul class="top-promotion__contain-list-type">
+                        <li class="top-promotion__contain-list-type__list">Asia</li>
+                        <li class="top-promotion__contain-list-type__list">Sport</li>
+                    </ul>
+                    <div class="top-promotion__contain-list-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</div>
+                    <button class=" hvr-shutter-out-horizontal top-promotion__contain-list-btn">Details</button>
+                </div>
+            </div>
+            <div class="top-promotion__packages-contain">
+                <div class="top-promotion__packages">ALL PACKAGES</div>
+                <div class="top-promotion__packages">PROMOTIONS</div>
+            </div>
+        </div>
+        <div class="parallax_tour-wrap">
+            <div class="parallax_tour">
+                <div class="parallax_tour__bg" style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/parallax-1.jpg);">
+                    <div class="parallax_tour__bg--layout"></div>
+                </div>
+                <div class="parallax_tour__content">
+                    <h3>Summer Promotion</h3>
+                    <div class="parallax_tour__content-line"></div>
+                    <div class="parallax_tour__content-header">Santorini - Greek island Tour</div>
+                    <div class="parallax_tour__content-sale">1000 $ for person - 6 nights</div>
+                    <button class="parallax_tour__content-btn">More details</button>
+                </div>
+            </div>
+        </div>
+        <div id="Shop" class="destination">
+            <div class="destination-name">Our destinations</div>
+            <div class="destination-desc">choose your next destination</div>
+            <ul class="destination-list">
+                <li class="destination-list__link">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/destination-10.jpg" alt="">
+                    <div class="hvr-bounce-to-bottom destination-list__link-name">Oceania</div>
+                    <div class="destination-list__link-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <div class="destination-list__link-detail--layout"></div>
+                    </div>
+                </li>
+                <li class="destination-list__link">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/destination-6.jpg" alt="">
+                    <div class="hvr-bounce-to-bottom destination-list__link-name">Africa</div>
+                    <div class="destination-list__link-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <div class="destination-list__link-detail--layout"></div>
+                    </div>
+                </li>
+                <li class="destination-list__link">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/destination-20.jpg" alt="">
+                    <div class="hvr-bounce-to-bottom destination-list__link-name">America</div>
+                    <div class="destination-list__link-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <div class="destination-list__link-detail--layout"></div>
+                    </div>
+                </li>
+                <li class="destination-list__link">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/04/destination-7.jpg" alt="">
+                    <div class="hvr-bounce-to-bottom destination-list__link-name">Asia</div>
+                    <div class="destination-list__link-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <div class="destination-list__link-detail--layout"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sightseeing">
+            <div class="sightseeing-img">
+                <div class="sightseeing_tour__bg--layout"></div>
+            </div>
+            <ul class="sightseeing-count__list">
+                <li class="sightseeing-count">
+                    <div class="sightseeing-count--num">75</div>
+                    <span style="background-color: #ffd205;" class="sightseeing-count--detail">Destination</span>
+                </li>
+                <li class="sightseeing-count">
+                    <div class="sightseeing-count--num">149</div>
+                    <span style="background-color:#1bbc9b ;" class="sightseeing-count--detail">Tour Pack</span>
+                </li>
+                <li class="sightseeing-count">
+                    <div class="sightseeing-count--num">32</div>
+                    <span style="background-color:#14b9d5 ;" class="sightseeing-count--detail">Cruises</span>
+                </li>
+                <li class="sightseeing-count">
+                    <div class="sightseeing-count--num">24</div>
+                    <span style="background-color:#f76570 ;" class="sightseeing-count--detail">Hour support</span>
+                </li>
+            </ul>
+        </div>
+        <div class="Tour-price">
+            <h1>Packages</h1>
+            <p>Best travel Packages</p>
+            <div class="line"></div>
+            <div class="Tour-price_list">
+                <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-rome.jpg);" class="Tour-price_list-item">
+                    <div class="Tour-price__list-content">
+                        <h3>Rome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <button>See detail</button>
+                    </div>
+                </div>
+                <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-london.jpg);" class="Tour-price_list-item">
+                    <div class="Tour-price__list-content">
+                        <h3>Rome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <button>See detail</button>
+                    </div>
+                </div>
+                <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-berlin.jpg);" class="Tour-price_list-item">
+                    <div class="Tour-price__list-content">
+                        <h3>Rome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <button>See detail</button>
+                    </div>
+                </div>
+                <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-dubai.jpg);" class="Tour-price_list-item">
+                    <div class="Tour-price__list-content">
+                        <h3>Rome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <button>See detail</button>
+                    </div>
+                </div>
+                <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-cuba.jpg);" class="Tour-price_list-item">
+                    <div class="Tour-price__list-content">
+                        <h3>Rome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <button>See detail</button>
+                    </div>
+                </div>
+                <div style="background-image: url(http://www.nicdarkthemes.com/themes/travel/wp/demo/travel/wp-content/uploads/sites/2/2018/03/package-newdelhi.jpg);" class="Tour-price_list-item">
+                    <div class="Tour-price__list-content">
+                        <h3>Rome</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                        <button>See detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="Tour-price--btn">
+                <button class="Tour-price__main Tour-price--next"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="Tour-price__main Tour-price--prev"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </main>
+    <footer id="AboutUs">
+        <div class="footer__contain">
+            <div class="footer-support">
+                <h3 class="hvr-forward">Phone Support</h3>
+                <p class="hvr-forward">24 HOURS A DAY</p>
+                <h2 class="hvr-forward">+ 01 345 647 745</h2>
+            </div>
+            <div class="footer-connect">
+                <h3 class="hvr-forward">Connect With Us</h3>
+                <p class="hvr-forward">SOCIAL MEDIA CHANNELS</p>
+                <ul class="footer-connect__icon">
+                    <li class="footer-connect__icon-link"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="footer-connect__icon-link"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="footer-connect__icon-link"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="footer-connect__icon-link"><i class="fa-brands fa-pinterest-p"></i></li>
+                    <li class="footer-connect__icon-link"><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Newsletter</h3>
+                <p>SIGN UP FOR SPECIAL OFFERS</p>
+                <form>
+                    <input class="footer-contact__input" type="email" placeholder="Email">
+                    <button class="footer-contact__input--btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-owner">© Copyright 2018 nicdark.com</div>
+            <div class="copyright-theme">Best Travel WordPress Theme</div>
+        </div>
+    </footer>
+</body>
+<script src="./main.js"></script>
+</html>
