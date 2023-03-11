@@ -1,0 +1,157 @@
+:root {
+    --main:#223b76;
+    --tv: #4a90e2;
+    --fridge:#d84040;
+    --appliance:#6f993e;
+    --kitchen:#8bc34a;
+    --digital:#607d8b;
+    --convenient:#ff4081;
+    --facebook:#3b5998;
+    --gg:#dd4b39;
+    --twitter:#00acee;
+    --yahoo:#720e9e;
+    --printerest:#c8232c;
+    --wifi:#ee802f;
+}
+.header-dropdown:hover>.header-dropdown_list {
+    display: block;
+    transition: all ease-in 0.2s;
+}  
+.header-dropdown_list-link:hover {
+    background-color: #00acee;
+    color: #fff !important;
+}
+.header-dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+}
+.icon-opencart {
+    width: 24px !important;
+    height: 24px !important;
+    background-color: #4a90e2 !important;
+    line-height: 50px !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: all ease-out 0.3s;
+    z-index: 5;
+    font-size: 12px;
+}
+.menu-group__list {
+    height: 0;
+}
+.submenu-icon {
+    width: 50px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    font-size: 30px !important;
+}
+.menu-dropdown {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    cursor: pointer;
+    height: 100%;
+}
+.menu-btn {
+    background-color: #4a90e2;
+    border: none;    
+}
+.layout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+.input-header {
+    outline: none !important;
+    padding-left: 12px;
+    height: 100%;
+}
+.input-header::placeholder {
+    font-size: 12px !important;
+    padding: 0px 0 4px 12px !important;
+}
+main {
+    margin-top: 150px;
+}
+.box-title--tv {
+    height: 80px;
+    border-bottom: 3px solid var(--tv);
+}
+.box-title--fridge {
+    height: 80px;
+    border-bottom: 3px solid var(--fridge);
+}
+.box-title--appliance {
+    height: 80px;
+    border-bottom: 3px solid var(--appliance);
+}
+.box-title--kitchen {
+    height: 80px;
+    border-bottom: 3px solid var(--kitchen);
+}
+.box-title--digital {
+    height: 80px;
+    border-bottom: 3px solid var(--digital);
+}
+.box-title--convenient {
+    height: 80px;
+    border-bottom: 3px solid var(--convenient);
+}
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #b2b2b2;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.subfooter {
+    background-color: #424242;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+}
+.fb {
+    background-color: var(--facebook);
+}
+.gg {
+    background-color: var(--gg);
+}
+.twitter {
+    background-color: var(--twitter);
+}
+.yahoo {
+    background-color: var(--yahoo);
+}
+.printerest {
+    background-color: var(--printerest);
+}
+.wifi {
+    background-color: var(--wifi);
+}
+.list-link {
+    text-decoration: none;
+    color: var(--link);
+}
+#btn-back-to-top {
+    position: absolute;
+    right: 30px;
+    top: -36px;
+    background-color: #00acee;
+}

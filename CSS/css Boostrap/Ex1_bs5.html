@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>    
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>     
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Ex1_bs5.css">
+    <link rel="stylesheet" href="./css/hover-min.css">
+    <title>Learning</title>
+</head>
+<body>
+    <header>
+        <!-- Mobile phone -->
+        <!-- PC -->
+        <div class="container p-3">
+            <div class="row align-items-center">
+                <div class="col-6 col-xs-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex align-items-center">
+                    <i class="fa-solid fa-book d-flex align-items-center justify-content-center rounded text-white" style="width: 25px; height: 25px; background-color: var(--main);"></i>
+                    <div class="ms-2 text-uppercase fw-bold" style="color: var(--text); font-size: 14px;">Learning</div>
+                </div>
+                <div class="col-6 col-xs-6 col-md-6 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="d-flex align-items-center justify-content-end justify-content-lg-between">
+                        <div class="d-none d-lg-block">
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                <div class="mx-3 hvr-underline-from-left cursor-pointer">Home</div>
+                                <div class="mx-3 hvr-underline-from-left cursor-pointer">Course</div>
+                                <div class="mx-3 hvr-underline-from-left cursor-pointer">Service</div>
+                                <div class="mx-3 hvr-underline-from-left cursor-pointer">Testimonial</div>
+                                <div class="mx-3 hvr-underline-from-left cursor-pointer">Contact</div>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block">
+                            <div class="account d-flex align-items-center">
+                                <div class="account-login border-primary rounded border px-4 py-1 fw-bold">Login</div>
+                                <div class="border-primary rounded border px-4 ms-2 py-1 bg-primary text-white fw-bold account-regis">Register</div>
+                            </div>
+                        </div>
+                        <div class="d-md-none">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel"></h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="d-flex flex-column align-items-start justify-content-center" style="font-size: 14px;">
+                                        <div class="m-3 hvr-underline-from-left cursor-pointer">Home</div>
+                                        <div class="m-3 hvr-underline-from-left cursor-pointer">Course</div>
+                                        <div class="m-3 hvr-underline-from-left cursor-pointer">Service</div>
+                                        <div class="m-3 hvr-underline-from-left cursor-pointer">Testimonial</div>
+                                        <div class="m-3 hvr-underline-from-left cursor-pointer">Contact</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                    <h1 class="fw-bold fs-md-3" style="color: var(--text); font-size:56px;">Learn more and make success the result</h1>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                    <div class="text-primary" style="font-size: 12px;">- The best E-learning Platform</div>
+                    <div class="my-3" style="font-size: 12px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ad assumenda deserunt iusto earum eligendi, dolorum perferendis dolor amet eos obcaecati, architecto autem culpa omnis id repellendus inventore tempora. Obcaecati?</div>
+                    <button class="rounded text-white border border-primary p-2 fw-bold" style="background-color: var(--main); font-size: 10px;">Show all Courses</button>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-xs-12 col-md-6 col-xl-7 col-xxl-8">
+                    <iframe class="w-100 h-100" src="https://www.youtube.com/embed/zSW4pv6jc0w" frameborder="0"></iframe>
+                </div>
+                <div class="col-12 col-xs-12 col-md-6 col-xl-5 col-xxl-4">
+                    <div class="my-3">
+                        <div class="video-number text-center fw-bold fs-2" style="color: var(--main);">15+</div>
+                        <div class="video-detail text-center opacity-75" style="font-size: 12px;">Total branches opened in last year</div>
+                    </div>
+                    <div class="my-3">
+                        <div class="video-number text-center fw-bold fs-2" style="color: var(--main);">5K+</div>
+                        <div class="video-detail text-center opacity-75" style="font-size: 12px;">New student in last 30 days</div>
+                    </div>
+                    <div class="my-3">
+                        <div class="video-number text-center fw-bold fs-2" style="color: var(--main);">1.5K+</div>
+                        <div class="video-detail text-center opacity-75" style="font-size: 12px;">New student in last 30 days</div>
+                    </div>
+                </div>
+            </div>
+            <div class="courses mt-5 text-center">
+                <div class="courses-title fs-3 fw-bold" style="color: var(--text);">Our Featured Courses</div>
+                <div class="courses-detail px-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellendus unde non numquam laborum eos, facilis magnam vel quia placeat molestias.</div>
+            </div>
+            <div class="row mt-4 gy-4">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="courses-item rounded border">
+                        <img class="img-fluid rounded-1 p-1" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/08/11150532/developer-la-nhung-vi-%E2%80%9Cnhac-truong-sang-tao-nen-%E2%80%9Cban-nhac%E2%80%9D-phan-mem-ung-dung-1024x576.jpg" alt="" style="border-radius: 12px !important;">
+                        <div class="courses-item_header d-flex my-2 justify-content-between align-items-center px-3">
+                            <div class="courses-item__header-name rounded-3 p-2" style="background-color: #ecf4fe; font-size: 12px;">Development</div>
+                            <div class="courses-item__header-price fw-bold" style="color: var(--main);">$225</div>
+                        </div>
+                        <div class="px-3 courses-item__detail" style="font-size: 14px;">Become a professional designer be with passion & dignity</div>
+                        <div class="px-3 courses-item__lessons d-flex justify-content-between align-items-center my-3">
+                            <div class="courses-item__lessons-name d-flex align-items-center text-secondary">
+                                <i class="fa-solid fa-book me-2"></i>
+                                20 lessons
+                            </div>
+                            <div class="courses-item__lessons-people text-secondary">
+                                <i class="fa-solid fa-user-group"></i>
+                                237 students
+                            </div>
+                        </div>
+                        <div class="courses-item__rate px-3 d-flex align-items-center justify-content-between mb-3">
+                            <div class="courses-item__rate--star text-secondary" style="font-size: 12px;">
+                                5.0 
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                (2,589)
+                            </div>
+                            <div class="courses-item__rate--arrow">
+                                <i class="rounded-circle fa-solid fa-arrow-right p-2" style="background-color: #ecf4fe;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="courses-item rounded border">
+                        <img class="img-fluid rounded-1 p-1" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/08/11150532/developer-la-nhung-vi-%E2%80%9Cnhac-truong-sang-tao-nen-%E2%80%9Cban-nhac%E2%80%9D-phan-mem-ung-dung-1024x576.jpg" alt="" style="border-radius: 12px !important;">
+                        <div class="courses-item_header d-flex my-2 justify-content-between align-items-center px-3">
+                            <div class="courses-item__header-name rounded-3 p-2" style="background-color: #ecf4fe; font-size: 12px;">Development</div>
+                            <div class="courses-item__header-price fw-bold" style="color: var(--main);">$225</div>
+                        </div>
+                        <div class="px-3 courses-item__detail" style="font-size: 14px;">Become a professional designer be with passion & dignity</div>
+                        <div class="px-3 courses-item__lessons d-flex justify-content-between align-items-center my-3">
+                            <div class="courses-item__lessons-name d-flex align-items-center text-secondary">
+                                <i class="fa-solid fa-book me-2"></i>
+                                20 lessons
+                            </div>
+                            <div class="courses-item__lessons-people text-secondary">
+                                <i class="fa-solid fa-user-group"></i>
+                                237 students
+                            </div>
+                        </div>
+                        <div class="courses-item__rate px-3 d-flex align-items-center justify-content-between mb-3">
+                            <div class="courses-item__rate--star text-secondary" style="font-size: 12px;">
+                                5.0 
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                (2,589)
+                            </div>
+                            <div class="courses-item__rate--arrow">
+                                <i class="rounded-circle fa-solid fa-arrow-right p-2" style="background-color: #ecf4fe;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="courses-item rounded border">
+                        <img class="img-fluid rounded-1 p-1" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/08/11150532/developer-la-nhung-vi-%E2%80%9Cnhac-truong-sang-tao-nen-%E2%80%9Cban-nhac%E2%80%9D-phan-mem-ung-dung-1024x576.jpg" alt="" style="border-radius: 12px !important;">
+                        <div class="courses-item_header d-flex my-2 justify-content-between align-items-center px-3">
+                            <div class="courses-item__header-name rounded-3 p-2" style="background-color: #ecf4fe; font-size: 12px;">Development</div>
+                            <div class="courses-item__header-price fw-bold" style="color: var(--main);">$225</div>
+                        </div>
+                        <div class="px-3 courses-item__detail" style="font-size: 14px;">Become a professional designer be with passion & dignity</div>
+                        <div class="px-3 courses-item__lessons d-flex justify-content-between align-items-center my-3">
+                            <div class="courses-item__lessons-name d-flex align-items-center text-secondary">
+                                <i class="fa-solid fa-book me-2"></i>
+                                20 lessons
+                            </div>
+                            <div class="courses-item__lessons-people text-secondary">
+                                <i class="fa-solid fa-user-group"></i>
+                                237 students
+                            </div>
+                        </div>
+                        <div class="courses-item__rate px-3 d-flex align-items-center justify-content-between mb-3">
+                            <div class="courses-item__rate--star text-secondary" style="font-size: 12px;">
+                                5.0 
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                (2,589)
+                            </div>
+                            <div class="courses-item__rate--arrow">
+                                <i class="rounded-circle fa-solid fa-arrow-right p-2" style="background-color: #ecf4fe;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="courses-item rounded border">
+                        <img class="img-fluid rounded-1 p-1" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/08/11150532/developer-la-nhung-vi-%E2%80%9Cnhac-truong-sang-tao-nen-%E2%80%9Cban-nhac%E2%80%9D-phan-mem-ung-dung-1024x576.jpg" alt="" style="border-radius: 12px !important;">
+                        <div class="courses-item_header d-flex my-2 justify-content-between align-items-center px-3">
+                            <div class="courses-item__header-name rounded-3 p-2" style="background-color: #ecf4fe; font-size: 12px;">Development</div>
+                            <div class="courses-item__header-price fw-bold" style="color: var(--main);">$225</div>
+                        </div>
+                        <div class="px-3 courses-item__detail" style="font-size: 14px;">Become a professional designer be with passion & dignity</div>
+                        <div class="px-3 courses-item__lessons d-flex justify-content-between align-items-center my-3">
+                            <div class="courses-item__lessons-name d-flex align-items-center text-secondary">
+                                <i class="fa-solid fa-book me-2"></i>
+                                20 lessons
+                            </div>
+                            <div class="courses-item__lessons-people text-secondary">
+                                <i class="fa-solid fa-user-group"></i>
+                                237 students
+                            </div>
+                        </div>
+                        <div class="courses-item__rate px-3 d-flex align-items-center justify-content-between mb-3">
+                            <div class="courses-item__rate--star text-secondary" style="font-size: 12px;">
+                                5.0 
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                (2,589)
+                            </div>
+                            <div class="courses-item__rate--arrow">
+                                <i class="rounded-circle fa-solid fa-arrow-right p-2" style="background-color: #ecf4fe;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="courses-item rounded border">
+                        <img class="img-fluid rounded-1 p-1" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/08/11150532/developer-la-nhung-vi-%E2%80%9Cnhac-truong-sang-tao-nen-%E2%80%9Cban-nhac%E2%80%9D-phan-mem-ung-dung-1024x576.jpg" alt="" style="border-radius: 12px !important;">
+                        <div class="courses-item_header d-flex my-2 justify-content-between align-items-center px-3">
+                            <div class="courses-item__header-name rounded-3 p-2" style="background-color: #ecf4fe; font-size: 12px;">Development</div>
+                            <div class="courses-item__header-price fw-bold" style="color: var(--main);">$225</div>
+                        </div>
+                        <div class="px-3 courses-item__detail" style="font-size: 14px;">Become a professional designer be with passion & dignity</div>
+                        <div class="px-3 courses-item__lessons d-flex justify-content-between align-items-center my-3">
+                            <div class="courses-item__lessons-name d-flex align-items-center text-secondary">
+                                <i class="fa-solid fa-book me-2"></i>
+                                20 lessons
+                            </div>
+                            <div class="courses-item__lessons-people text-secondary">
+                                <i class="fa-solid fa-user-group"></i>
+                                237 students
+                            </div>
+                        </div>
+                        <div class="courses-item__rate px-3 d-flex align-items-center justify-content-between mb-3">
+                            <div class="courses-item__rate--star text-secondary" style="font-size: 12px;">
+                                5.0 
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                (2,589)
+                            </div>
+                            <div class="courses-item__rate--arrow">
+                                <i class="rounded-circle fa-solid fa-arrow-right p-2" style="background-color: #ecf4fe;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="courses-item rounded border">
+                        <img class="img-fluid rounded-1 p-1" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/08/11150532/developer-la-nhung-vi-%E2%80%9Cnhac-truong-sang-tao-nen-%E2%80%9Cban-nhac%E2%80%9D-phan-mem-ung-dung-1024x576.jpg" alt="" style="border-radius: 12px !important;">
+                        <div class="courses-item_header d-flex my-2 justify-content-between align-items-center px-3">
+                            <div class="courses-item__header-name rounded-3 p-2" style="background-color: #ecf4fe; font-size: 12px;">Development</div>
+                            <div class="courses-item__header-price fw-bold" style="color: var(--main);">$225</div>
+                        </div>
+                        <div class="px-3 courses-item__detail" style="font-size: 14px;">Become a professional designer be with passion & dignity</div>
+                        <div class="px-3 courses-item__lessons d-flex justify-content-between align-items-center my-3">
+                            <div class="courses-item__lessons-name d-flex align-items-center text-secondary">
+                                <i class="fa-solid fa-book me-2"></i>
+                                20 lessons
+                            </div>
+                            <div class="courses-item__lessons-people text-secondary">
+                                <i class="fa-solid fa-user-group"></i>
+                                237 students
+                            </div>
+                        </div>
+                        <div class="courses-item__rate px-3 d-flex align-items-center justify-content-between mb-3">
+                            <div class="courses-item__rate--star text-secondary" style="font-size: 12px;">
+                                5.0 
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                <i class="fa-solid fa-star text-primary"></i>
+                                (2,589)
+                            </div>
+                            <div class="courses-item__rate--arrow">
+                                <i class="rounded-circle fa-solid fa-arrow-right p-2" style="background-color: #ecf4fe;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="learning text-xs-center text-md-start">
+                        <div class="learning-title fw-bold fs-2">We Make Your Learning Through Awesome</div>
+                        <div class="learning-desc text-secondary my-3" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus a incidunt tenetur perferendis officiis tempora eum eveniet, dolorum impedit quod facilis modi ab blanditiis, corrupti, veritatis eos iusto nisi voluptatem.</div>
+                        <div class="learning-desc text-secondary" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus a incidunt tenetur perferendis officiis tempora eum eveniet, dolorum impedit quod facilis modi ab blanditiis, corrupti, veritatis eos iusto nisi voluptatem.</div>
+                        <div class="learning-statistic d-flex gx-3 mt-3 align-items-center justify-content-center mb-3">
+                            <div class="learning-statistic__percent me-5 text-center">
+                                <div class="learning-statistic__number fw-bold fs-3" style="color: var(--main);">15K+</div>
+                                <div class="learning-statistic__name" style="font-size: 12px; color: var(--text);">Student</div>
+                            </div>
+                            <div class="learning-statistic__percent me-5 text-center">
+                                <div class="learning-statistic__number fw-bold fs-3" style="color: var(--main);">125+</div>
+                                <div class="learning-statistic__name" style="font-size: 12px; color: var(--text);">Courses</div>
+                            </div>
+                            <div class="learning-statistic__percent me-5 text-center">
+                                <div class="learning-statistic__number fw-bold fs-3" style="color: var(--main);">200+</div>
+                                <div class="learning-statistic__name" style="font-size: 12px; color: var(--text);">Courses</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="learning-app">
+                        <div class="learning-app-award d-flex align-items-center">
+                            <i class="rounded-2 text-white fa-solid fa-video p-3 d-flex align-items-center justify-content-center" style="background-color: #fed134;"></i>
+                            <div class="learning-app__course d-flex flex-column justify-content-center ms-3 fw-bold" style="font-size: 13px;">
+                                <div class="">Over 5,8k</div>
+                                <div class="">Video Courses</div> 
+                            </div>
+                        </div>
+                        <div class="learning-app__desc text-secondary my-3" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus necessitatibus amet consequatur ipsa ducimus eaque ullam omnis ut possimus in aliquam, culpa blanditiis! Dolores suscipit aspernatur id officia eum?</div>
+                    </div>
+                    <div class="learning-app">
+                        <div class="learning-app-award d-flex align-items-center">
+                            <i class="rounded-2 text-white fa-solid fa-video p-3 d-flex align-items-center justify-content-center" style="background-color: #fed134;"></i>
+                            <div class="learning-app__course d-flex flex-column justify-content-center ms-3 fw-bold" style="font-size: 13px;">
+                                <div class="">Over 5,8k</div>
+                                <div class="">Video Courses</div> 
+                            </div>
+                        </div>
+                        <div class="learning-app__desc text-secondary my-3" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus necessitatibus amet consequatur ipsa ducimus eaque ullam omnis ut possimus in aliquam, culpa blanditiis! Dolores suscipit aspernatur id officia eum?</div>
+                    </div>
+                    <div class="learning-app">
+                        <div class="learning-app-award d-flex align-items-center">
+                            <i class="rounded-2 text-white fa-solid fa-video p-3 d-flex align-items-center justify-content-center" style="background-color: #fed134;"></i>
+                            <div class="learning-app__course d-flex flex-column justify-content-center ms-3 fw-bold" style="font-size: 13px;">
+                                <div class="">Over 5,8k</div>
+                                <div class="">Video Courses</div> 
+                            </div>
+                        </div>
+                        <div class="learning-app__desc text-secondary my-3" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus necessitatibus amet consequatur ipsa ducimus eaque ullam omnis ut possimus in aliquam, culpa blanditiis! Dolores suscipit aspernatur id officia eum?</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="books">
+                    <div class="fw-bold text-center fs-1 mb-2" style="color: var(--text);">Some Best Books</div>
+                    <div class="text-center px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptas voluptatem, pariatur expedita dolores</div>
+                </div>
+                <section class="pt-5 pb-5"> 
+                    <div class="row position-relative">
+                        <a class="mb-3 position-absolute top-50 start-0" href="#carouselExampleIndicators2" role="button" data-slide="prev" style="width: 30px; height: 30px; z-index: 2;">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="mb-3 position-absolute top-50 end-0" href="#carouselExampleIndicators2" role="button" data-slide="next" style="width: 30px; height: 30px; z-index: 2;">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>                        
+                        <div class="col-12">
+                          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="row">
+                                  <div class="d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://m.media-amazon.com/images/I/91Xy6x4G4dL._AC_UF1000,1000_QL80_.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-md-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://m.media-amazon.com/images/I/51Z05DPG4PL._AC_UF1000,1000_QL80_.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://m.media-amazon.com/images/I/71uRsHhdE8L.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://i2.wp.com/abcsofliteracy.com/wp-content/uploads/2020/05/2020-05-16-00.56.35.jpg">                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>                    
+                              <div class="carousel-item">
+                                <div class="row">
+                                    <div class="d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://m.media-amazon.com/images/I/71uRsHhdE8L.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-md-block d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://m.media-amazon.com/images/I/71uRsHhdE8L.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://mothernatured.com/mn/wp-content/uploads/2019/05/Picture-books-about-nature.png">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://m.media-amazon.com/images/I/71vkwu1jczL._AC_UF350,350_QL50_.jpg">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="row">
+                                <div class="d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://i2.wp.com/abcsofliteracy.com/wp-content/uploads/2020/05/2020-05-16-00.56.35.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-md-block d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://m.media-amazon.com/images/I/71uRsHhdE8L.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://i2.wp.com/abcsofliteracy.com/wp-content/uploads/2020/05/2020-05-16-00.56.35.jpg">
+                                    </div>
+                                  </div>
+                                  <div class="d-none d-lg-block col-12 col-xs-12 col-md-6 col-lg-3 col-md-3 mb-3">
+                                    <div class="card h-100">
+                                      <img class="img-fluid" alt="100%x280" src="https://mothernatured.com/mn/wp-content/uploads/2019/05/Picture-books-about-nature.png">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </section>
+            </div>
+            <div class="row mt-5 position-relative">
+                <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="friends">
+                        <div class="friends-header fw-bold mb-2 fs-2" style="color: var(--text); line-height: 40px;">Get more close with your courses</div>
+                        <div class="friends-desc text-secondary mb-2" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quo dignissimos assumenda voluptatum labore architecto soluta rerum fuga voluptatem qui, reiciendis delectus placeat ipsum nemo aliquid consectetur itaque natus illo.</div>
+                        <div class="friends-desc text-secondary" style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quo dignissimos assumenda voluptatum labore architecto soluta rerum fuga voluptatem qui.</div>
+                        <div class="friends-item d-flex mb-2 mt-4 align-items-center" style="color: var(--text); font-size: 12px;">
+                            <i class="fa-solid fa-check me-3 p-1 d-flex align-items-center justify-content-between rounded-circle text-white" style="background-color: var(--main);"></i>
+                            Detail desction of each courses
+                        </div>
+                        <div class="friends-item d-flex mb-2 align-items-center" style="color: var(--text); font-size: 12px;">
+                            <i class="fa-solid fa-check me-3 p-1 d-flex align-items-center justify-content-between rounded-circle text-white" style="background-color: var(--main);"></i>
+                            Detail desction of each courses
+                        </div>
+                        <div class="friends-item d-flex mb-2 align-items-center" style="color: var(--text); font-size: 12px;">
+                            <i class="fa-solid fa-check me-3 p-1 d-flex align-items-center justify-content-between rounded-circle text-white" style="background-color: var(--main);"></i>
+                            Detail desction of each courses
+                        </div>
+                        <button class="mt-3 p-2 btn text-white fw-bold rounded " style="background-color: var(--main); font-size: 12px;">Start Learning Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-6 mt-5 position-relative">
+                    <img class="w-100 h-100 img-fluid" src="https://media.istockphoto.com/id/533227647/photo/chasing-after-success-and-having-fun-doing-it.jpg?s=170667a&w=0&k=20&c=ehgpZSA0iqHWqUTldF_hptm9hVSYsri6tZsJop_y5ac=" alt="">
+                    <img class="w-50 h-50 rounded-3 position-absolute" style="right: calc(50% + 20px); top: 70%;" src="https://media.istockphoto.com/id/1178856357/photo/financial-planning-for-early-retirement.jpg?s=612x612&w=0&k=20&c=T0iPPK-sK80Npy9DIBEQg94_o6mShkjTH9kz81256y4=" alt="">
+                </div>
+            </div>
+            <div class="row align-items-center rounded-3 p-4" style="background-color: var(--main); margin-top: 150px;">
+                <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="join d-flex flex-column justify-content-center">
+                        <div class="join-heaeder fw-bold fs-3 mb-4 text-white">Ready to join...</div>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit obcaecati laudantium modi distinctio nulla aspernatur. Porro magni in cumque iusto dolores debitis delectus?.</p>
+                    </div>
+                </div> 
+                <div class="col-12 col-xs-12 col-md-12 col-lg-6 col-xl-6 text-center">
+                    <div class="join">
+                        <div class="join-btn btn p-2 px-4 bg-white fw-bold rounded-3" style="font-size: 12px;">Register Now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row gx-5 text-lg-start">
+                <div class="col-12 col-xs-12 col-md-12 col-lg-4">
+                    <div class="footer-learn d-flex align-items-center mb-3">
+                        <i class="me-2 fa-solid fa-book d-flex align-items-center justify-content-center rounded text-white" style="width: 25px; height: 25px; background-color: var(--main);"></i>
+                        <div class="footer-learn__header fw-bold">Learning</div>
+                    </div>
+                    <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maiores nemo voluptates inventore..</p>
+                    <div class="footer-learn__icon d-flex">
+                        <i class="me-5 fa-brands fa-facebook"></i>
+                        <i class="me-5 fa-brands fa-linkedin-in" style="color: var(--main);"></i>
+                        <i class="me-5 fa-brands fa-instagram"></i>
+                        <i class="me-5 fa-brands fa-pinterest-p"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-xs-12 col-md-12 col-lg-2">
+                    <div class="cate">
+                        <div class="cate_header fw-bold mb-3">Category</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Privacy & Policy</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Terms & Condition</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Customer Support</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">For Business</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Support</div>
+                    </div>
+                </div>
+                <div class="col-12 col-xs-12 col-md-12 col-lg-2">
+                    <div class="cate">
+                        <div class="cate_header fw-bold mb-3">Useful Links</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">About Us</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Refer A Friend</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Scholarship</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Marketing</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">Free Courses</div>
+                    </div>
+                </div>
+                <div class="col-12 col-xs-12 col-md-12 col-lg-4">
+                    <div class="cate">
+                        <div class="cate_header fw-bold mb-3">Contact US</div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">
+                            <i class="fa-solid fa-phone"></i>
+                            01719534287
+                        </div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Rangpur, Bangladesh
+                        </div>
+                        <div class="text-secondary mb-2" style="font-size: 12px;">
+                            <i class="fa-solid fa-envelope"></i>
+                            Wpdsharier565@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 border-top text-center py-2 text-secondary" style="font-size: 10px;">C Copyright 2021 Softfounder (www.softfounder.com) - Email: Wpdshariar565@gmail.com</div>
+            </div>
+        </div>
+        <div class="backToTop">
+            <i class="fa-solid fa-arrow-up rounded-circle text-white d-flex align-items-center justify-content-center"></i>
+        </div>
+    </footer>
+</body>
+<script>
+    document.querySelector('.backToTop').onclick = function()
+    {
+        window.scrollTo(0,0);
+    }
+    document.querySelector('.modal-backdrop.show').style.display = 'none !important';
+</script>
+</html>

@@ -1,0 +1,47 @@
+:root {
+    --main: #348aff;
+    --text:#051a40;
+}
+body {
+    background-color: #ecf4fe;
+}
+.account-login:hover {
+    cursor: pointer;
+    background-color: var(--main);
+    color: #fff;
+    transition: all ease 0.2s;
+}
+.account-regis:hover {
+    cursor: pointer;
+    background-color: #fff !important;
+    color: var(--text) !important;
+    transition: all ease 0.2s;
+}
+.backToTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.backToTop i {
+    width: 30px;
+    height: 30px;
+    background-color: var(--main);
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+    footer {
+        text-align: center;
+    }
+    .footer-learn__icon,
+    .footer-learn {
+        justify-content: center;
+    }
+    .footer-learn__icon .fa-brands {
+        margin:18px !important;
+    }
+}
+@media screen and (min-width:1200px) {
+    .learning {
+        text-align: left !important;
+    }
+}

@@ -12,7 +12,6 @@ itemTitles.forEach(item => {
     }
 })
 
-
 document.querySelector('.arrow-up').onclick = function() {
     window.scrollTo(0,0);
 }
