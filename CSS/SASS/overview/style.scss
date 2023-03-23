@@ -1,0 +1,20 @@
+$color: blue;
+
+.title {
+    color: $color;
+}
+header {
+    background-color: $color;
+    .title {
+        color: orange;
+    }
+    .sub-title {
+        background-color:orange;
+    }
+}
+.desciption {
+    .desciption__para {
+        color: red;
+        background-color: orange;
+    }
+}

@@ -1,0 +1,10 @@
+@mixin box($border,$color,$padding,$fontsize) {
+    border: $border;
+    color: $color;
+    padding: $padding;
+    font-size: $fontsize;
+}
+@import 'var';
+@import 'extrasmall';
+@import 'small';
+@import 'medium';

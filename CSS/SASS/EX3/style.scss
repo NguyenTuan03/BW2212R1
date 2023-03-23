@@ -1,0 +1,42 @@
+@mixin box($border,$padding,$fontweigh,$color,$bg) {
+    border: $border;
+    padding: $padding;
+    font-weight: $fontweigh;
+    color: $color;
+    background-color: $bg;
+}
+@mixin button($color,$bg,$borderRadius) {
+    padding: 8px 12px;
+    color: $color;
+    border: 4px solid;
+    background-color: $bg;
+    border-radius: $borderRadius;
+    cursor: pointer;
+}
+@mixin hoverBtn($color,$bg) {
+    &:hover {
+        color: $color;
+        background-color: $bg;
+    }
+}
+@import 'var';
+body {
+    background-color: $small_pc_bgColor;
+    main {
+        @include box(2px solid $small_pc_TextColor ,10px,bold,$small_pc_TextColor,$small_pc_bgColor);
+        .btn {
+            @include button($small_pc_TextColor,$small_pc_bgColor,10px);
+            @include hoverBtn($small_pc_bgColor,$small_pc_TextColor);
+        }
+    }
+    @media screen and (min-width: 768px) {
+        background-color: $pc_BgColor;
+        main {
+            @include box(2px solid $pc_TextColor ,10px,bold,$pc_TextColor,$pc_BgColor);
+            .btn {
+                @include button($pc_TextColor,$pc_BgColor,10px);
+                @include hoverBtn($pc_BgColor,$pc_TextColor);
+            }
+        }   
+    }
+}

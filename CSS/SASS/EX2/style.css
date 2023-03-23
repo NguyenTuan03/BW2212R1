@@ -1,0 +1,35 @@
+@media screen and (max-width: 576px) {
+  main {
+    border: 2px solid #8b0000;
+    color: #8b0000;
+    padding: 10px;
+    font-size: 16px;
+  }
+  main .title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  main {
+    border: 2px solid #00008b;
+    color: #00008b;
+    padding: 10px;
+    font-size: 14px;
+  }
+  main .title {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 769px) {
+  main {
+    border: 2px solid #006400;
+    color: #006400;
+    padding: 10px;
+    font-size: 12px;
+  }
+  main .title {
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

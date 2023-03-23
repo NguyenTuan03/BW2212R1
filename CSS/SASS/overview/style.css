@@ -1,0 +1,20 @@
+.title {
+  color: blue;
+}
+
+header {
+  background-color: blue;
+}
+header .title {
+  color: orange;
+}
+header .sub-title {
+  background-color: orange;
+}
+
+.desciption .desciption__para {
+  color: red;
+  background-color: orange;
+}
+
+/*# sourceMappingURL=style.css.map */

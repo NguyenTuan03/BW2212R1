@@ -1,0 +1,31 @@
+$fontFamily: 'monospace' + 'arial';
+@import 'variables';
+@mixin box($padding,$color,$bg) {
+    border:1px solid #000;
+    padding: $padding;
+    background-color: $bg;
+    color: $color;
+}
+.header-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+    &__link {
+        @include box(10px,$color,$backGroundColor);
+    }
+    &__btn {
+        padding: 4px 10px;
+        background-color: #055281;
+    }
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+main {
+    .header-list {
+        &__link {
+            @include box(4px,$Colorheader,red);
+        }
+    }
+}

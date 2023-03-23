@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.line {
+  width: 3px;
+  height: 30px;
+  background-color: #f15543;
+  margin-top: 8px;
+}
+
+.color-main {
+  color: #f15543;
+  cursor: pointer;
+}
+
+.border-solid {
+  border: 1px solid #4a4a4a;
+}
+
+.button-slider {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  color: #f15543;
+  background-color: transparent;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all ease 1.4s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.right_animate {
+  position: relative;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all ease 0.6s;
+}
+
+.right_animate.active {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.left_animate {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: all ease 0.8s;
+}
+
+.left_animate.active {
+  opacity: 1;
+  transform: translate(0);
+}
+
+header {
+  height: 120px;
+}
+header .image {
+  width: 95px;
+  height: 100%;
+}
+header .image img {
+  width: 100%;
+  height: 100%;
+}
+header .menu {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f15543;
+  position: relative;
+}
+header .menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #1a1a1a;
+  margin: auto;
+  border-radius: 6px;
+  transition: all ease 0.2s;
+}
+header .menu span:nth-child(1) {
+  transform-origin: left center;
+}
+header .menu span:nth-child(2) {
+  transform-origin: left center;
+}
+header .menu span:nth-child(3) {
+  transform-origin: left center;
+}
+header .menu.open span {
+  position: absolute;
+}
+header .menu.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 5px;
+  left: 6px;
+}
+header .menu.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+header .menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 32px;
+  left: 6px;
+}
+header .d-move {
+  transform: translateY(-200%);
+  transition: all ease-in 0.1s;
+}
+header .header-menu {
+  transition: all ease-in 0.5s;
+  overflow-y: scroll;
+}
+header .header-menu a {
+  transition: all ease-in 0.2s;
+  text-decoration: none;
+}
+header .header-menu a:hover {
+  background-color: none;
+  color: #f15543 !important;
+}
+header .header-menu .request-header button {
+  background-color: #f15543;
+  transition: all ease-in 0.2s;
+}
+header .header-menu .request-header button:hover {
+  background-color: #cc3827;
+  color: #fff;
+}
+header .header-menu .fa-instagram {
+  color: #f15543;
+}
+header .header-menu .email {
+  cursor: pointer;
+}
+header .header-menu .email:hover {
+  background-color: none;
+  color: #f15543;
+}
+header .page-lg-header .header-lg-link {
+  transition: all ease-in 0.2s;
+  text-decoration: none;
+}
+header .page-lg-header .header-lg-link:hover {
+  background-color: none;
+  color: #f15543 !important;
+}
+header .menu-btn button {
+  border: 1px solid #f15543;
+  background: #fff;
+  transition: all ease-in 0.2s;
+}
+header .menu-btn button:hover {
+  background-color: #f15543;
+  color: #fff;
+}
+
+main .Backtotop {
+  z-index: 999;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+main .Backtotop i {
+  width: 50px;
+  height: 50px;
+  background-color: #f15543;
+  color: #fff;
+  cursor: pointer;
+}
+main #intro .serve p {
+  color: #f15543;
+}
+main #initial .image {
+  background-image: url(https://www.tdmobiledetailing.com/_nuxt/img/homepage-2-lg.dccee84.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 285px;
+  max-width: 1800px;
+}
+@media screen and (min-width: 990px) {
+  main #initial .image {
+    min-height: 600px;
+  }
+}
+main #treudetail {
+  background-color: #1a1a1a;
+}
+main #treudetail .insta {
+  color: #fff;
+  text-decoration: none;
+}
+main #treudetail .insta i {
+  color: #f15543;
+}
+main #treudetail .insta:hover {
+  background-color: none;
+  color: #f15543;
+}
+main #treudetail .image {
+  background-image: url(https://www.tdmobiledetailing.com/_nuxt/img/homepage-about-1.f1842aa.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 630px;
+  object-fit: contain;
+}
+main #treudetail .image i {
+  background-color: #f15543;
+  width: 60px;
+  height: 60px;
+}
+main #treudetail .image:hover {
+  background-color: none;
+  color: #f15543;
+}
+main #treudetail .exp {
+  color: #f15543;
+}
+main #Jacob_Cline {
+  background-color: #e5e5e5;
+}
+main #Jacob_Cline .owner {
+  color: #f15543;
+}
+main #core_value .core_value-box:nth-child(2n) {
+  background-color: #e5e5e5 !important;
+}
+main #core_value .core_value-box:nth-child(2n+1) {
+  background-color: #fff !important;
+}
+main #core_value .core_value-box .core_value--icon i {
+  color: #f15543;
+  width: 120px;
+  height: 120px;
+  background-color: #e5e5e5;
+}
+main #carSlider .car-slider {
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+main #carSlider .car-slider:hover {
+  background-color: #f15543;
+  color: #fff;
+}
+main #carSlider .car-slider:nth-child(1) {
+  left: 50px;
+}
+main #carSlider .car-slider:nth-child(2) {
+  right: 50px;
+}
+
+footer {
+  background-color: #1a1a1a;
+}
+footer button {
+  background-color: #f15543;
+}
+footer button:hover {
+  background-color: #cc3827;
+  color: none;
+}
+footer .yahoo,
+footer .phone,
+footer .locate {
+  color: #f15543;
+}
+footer .social {
+  color: #f15543;
+}
+footer .fa-instagram {
+  color: #f15543;
+}
+footer img {
+  width: 100px;
+}
+
+/*# sourceMappingURL=about.css.map */

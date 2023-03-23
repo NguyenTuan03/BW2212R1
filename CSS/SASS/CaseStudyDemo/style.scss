@@ -1,0 +1,82 @@
+$fontFamily: 'monospace';
+$mainColor:#434a54;
+$textColor: #fff;
+$fontsize: 14px;
+$headerHeight:65px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin btn($padding,$radius,$color,$bg) {
+    padding: $padding;
+    border-radius: $radius;
+    color: $color;
+    background-color: $bg;
+    cursor: pointer;
+}
+@mixin flex() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin ulTag() {
+    padding: 0;
+    list-style: none;
+}
+@mixin backToTop($width,$height,$right,$bottom) {
+    position: fixed;
+    width: $width;
+    height: $height;
+    right: $right;
+    bottom: $bottom;
+}
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+header {
+    color: $textColor;
+    height: $headerHeight;
+    background-color: $mainColor;
+    @include flex();
+    font-family: $fontFamily;
+    padding: 0 20px;
+    font-size: $fontsize;
+    .header_right {
+        &__info {
+            @include ulTag();
+            @include flex();
+            color: #fff;
+            height: 65px;
+            & a {
+                text-decoration: none;
+                color: #fff;
+                margin: 0 12px;
+            }
+            & .info-user {
+                @include flex();
+                i {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+    .arrow-up {
+        text-align: center;
+        @include flex();
+        @include backToTop(30px,30px,30px,30px);
+        @include btn(4px 0,50%,$textColor,$mainColor);
+        justify-content: center;
+    }
+    @media screen and (min-width:900px) {
+        header {
+            .header_left {
+                
+            }
+        }
+
+    }
+}

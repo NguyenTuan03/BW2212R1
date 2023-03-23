@@ -1,0 +1,8 @@
+@media screen and (max-width:576px) {
+    main {
+        .title { 
+            font-size: 20px;
+        }
+        @include box(2px solid $color1,$color1,10px,16px);
+    }
+}

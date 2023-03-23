@@ -1,0 +1,289 @@
+$main-color: #f15543;
+$black-color:#1a1a1a;
+$height-header:120px;
+$position:50%;
+@mixin hover($bg,$color) {
+    &:hover {
+        background-color: $bg;
+        color: $color;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;   
+    box-sizing: border-box;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+.line {
+    width: 3px;
+    height: 30px;
+    background-color: $main-color;
+    margin-top: 8px;
+}
+.color-main {
+    color: $main-color;
+    cursor: pointer;
+}
+.border-solid {
+    border: 1px solid #4a4a4a;
+}
+.button-slider {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    color: $main-color;
+    background-color: transparent;
+}
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all ease 1.4s;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.right_animate {
+    position: relative;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all ease 0.6s;
+}
+.right_animate.active {     
+    opacity: 1;
+    transform: translate(0);
+}
+.left_animate {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: all ease 0.8s;
+}
+.left_animate.active {
+    opacity: 1;
+    transform: translate(0);
+}
+header {
+    height: $height-header;
+    .image {
+        width: 95px;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .menu {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border: 1px solid $main-color;
+        position: relative;
+        span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: $black-color;
+            margin: auto;
+            border-radius: 6px;
+            transition: all ease 0.2s;
+
+            &:nth-child(1) {
+                transform-origin: left center;
+            }
+            &:nth-child(2) {
+                transform-origin: left center;
+            }
+            &:nth-child(3) {
+                transform-origin: left center;
+            }
+        }
+        &.open span {
+            position: absolute;
+        }
+        &.open span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 5px;
+            left: 6px;
+        }
+        &.open span:nth-child(2) {
+            width: 0%;
+            opacity: 0;
+        }
+        &.open span:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 32px;
+            left: 6px;
+        }
+    }
+    .d-move {
+        transform: translateY(-200%);
+        transition: all ease-in 0.1s;
+    }
+    .header-menu {
+        transition: all ease-in 0.5s;
+        overflow-y: scroll;
+        a {
+            transition: all ease-in 0.2s;
+            text-decoration: none;
+            @include hover(none,$main-color !important);
+        }
+        .request-header {
+            button {
+                background-color: $main-color;
+                transition: all ease-in 0.2s;
+                @include hover(#cc3827, #fff);
+            }
+        }
+        .fa-instagram {
+            color: $main-color;
+        }
+        .email {
+            cursor: pointer;
+            @include hover(none,$main-color);
+        }
+    }
+    .page-lg-header {
+        .header-lg-link {
+            transition: all ease-in 0.2s;
+            text-decoration: none;
+            @include hover(none,$main-color !important); 
+        }
+    }
+    .menu-btn {
+        button {
+            border: 1px solid $main-color;
+            background:#fff;
+            transition: all ease-in 0.2s;
+            @include hover(#f15543, #fff);
+        }
+    }
+}
+main {
+    .Backtotop {
+        z-index: 999;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        i {
+            width: 50px;
+            height: 50px;
+            background-color: $main-color;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    #intro {
+        .serve {
+            p {
+                color: $main-color;
+            }
+        }
+    }
+    #initial {
+        .image {
+            background-image: url(https://www.tdmobiledetailing.com/_nuxt/img/homepage-2-lg.dccee84.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            min-height: 285px;
+            max-width: 1800px;
+            @media screen and (min-width: 990px) {
+                min-height: 600px;
+            }
+        }
+    }
+    #treudetail {
+        background-color: #1a1a1a;
+        .insta {
+            color: #fff;
+            text-decoration: none;
+            i {
+                color: $main-color;
+            }
+            @include hover(none,$main-color);
+        }   
+        .image {
+            background-image: url(https://www.tdmobiledetailing.com/_nuxt/img/homepage-about-1.f1842aa.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            min-height: 630px;
+            object-fit: contain;   
+            i {
+                background-color: $main-color;
+                width: 60px;
+                height: 60px;
+            }
+            @include hover(none, $main-color);
+        }
+        .exp {
+            color: $main-color;
+        }
+    }
+    #Jacob_Cline {
+        background-color: #e5e5e5;
+        .owner {
+            color: $main-color;
+        }
+    }
+    #core_value {
+        .core_value-box {
+            &:nth-child(2n) {
+                background-color: #e5e5e5 !important;
+            }
+            &:nth-child(2n+1) {
+                background-color: #fff !important;
+            }
+            .core_value--icon i{
+                color: $main-color;
+                width: 120px;
+                height: 120px;
+                background-color: #e5e5e5;
+            }
+        }
+    }
+    #carSlider {
+        .car-slider {
+            width: 60px;
+            height: 60px;            
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255,0.4);
+            outline: none;
+            @include hover($main-color, #fff);
+        }
+        .car-slider:nth-child(1) {
+            left: 50px;
+        }
+        .car-slider:nth-child(2) {
+            right: 50px;
+        }
+    }
+}
+footer {
+    background-color: #1a1a1a;
+    button {
+        background-color: $main-color;
+        @include hover( #cc3827, none);
+    }
+    .yahoo,
+    .phone,
+    .locate {
+        color: $main-color;
+    }
+    .social {
+        color: $main-color;
+    }
+    .fa-instagram {
+        color: $main-color;
+    }
+    img {
+        width: 100px;
+    }
+}

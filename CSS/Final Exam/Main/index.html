@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>     
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Car Detailing</title>
+</head>
+<body>
+    <header>
+        <div class="fixed-top bg-white header-navbar">
+            <div class="container d-block d-lg-none">
+                <div class="d-flex pt-4 pb-4 h-100 justify-content-between align-items-center">
+                    <a class="image" href="#">
+                        <img src="../logo.png" alt="Logo website">
+                    </a>
+                    <div class="menu text-center d-flex flex-column p-2 align-items-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header-menu pb-5 position-absolute start-0 end-0 bg-white d-move">
+                    <div class="container">
+                        <div class="d-flex flex-column">
+                            <div class="page-header">
+                                <a class="header-link d-block text-dark mb-2" href="">Home</a>
+                                <a class="header-link d-block text-dark mb-2" href="../About/about.html">About</a>
+                                <a class="header-link d-block text-dark mb-5" href="../Contact/contact.html">Contact</a>
+                            </div>
+                            <div class="service-header">
+                                <p class="text-secondary">Services</p>
+                                <a class="header-link d-block text-dark mb-2" href="">Paint Protection Film</a>
+                                <a class="header-link d-block text-dark mb-2" href="">Paint Correction</a>
+                                <a class="header-link d-block text-dark mb-2" href="">Ceramic Coatings</a>
+                                <a class="header-link d-block text-dark mb-2" href="">Car Detailing</a>
+                                <a class="header-link d-block text-dark mb-5" href="">Window Tint</a>
+                            </div>
+                            <div class="contact-header">
+                                <p class="text-secondary">Contact</p>
+                                <div class="yahoo">truedetailsrq@yahoo.com</div>
+                                <div class="phone mb-4">941-735-5738</div>
+                                <div class="email mb-4 d-flex">
+                                    <i class="fs-3 fa-brands fa-instagram me-3"></i>
+                                    @truedetailsrq
+                                </div>
+                            </div>
+                            <a href="../Request/request.html" class="request-header">
+                                <button class="w-100 p-3 border-0">Request a Quote</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-none d-lg-block">
+                <div class="d-flex pt-4 pb-4 h-100 justify-content-between align-items-center">
+                    <a class="image" href="#">
+                        <img src="../logo.png" alt="Logo website">
+                    </a>
+                    <div class="page-lg-header"> 
+                        <a class="header-lg-link p-2 text-dark mb-2" href="../Services/services.html">Services</a>
+                        <a class="header-lg-link p-2 text-dark mb-2" href="../About/about.html">About</a>
+                        <a class="header-lg-link p-2 text-dark mb-5" href="../Contact/contact.html">Contact</a>
+                    </div>
+                    <a href="../Request/request.html" class="menu-btn text-center">
+                        <button class="p-3">Request a Quote</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="Backtotop">
+            <i class="d-flex align-items-center justify-content-center rounded-circle fa-sharp fa-solid fa-arrow-up"></i>
+        </div>
+        <section id="intro">
+            <div class="container">
+                <div class="intro-header row d-block d-lg-none">
+                    <div class="col-12 intro-header-founder d-flex w-100 align-items-top">
+                        <div class="intro-header-founder__line line me-5"></div>    
+                        <div>
+                            <h1 class="reveal fw-bold fs-1">Founded on Passion.</h1>
+                            <h1 class="reveal fw-bold fs-1">Built on Service.</h1>
+                            <h1 class="reveal fw-bold fs-1">Measured on Results.</h1>
+                        </div>
+                    </div>
+                    <img class="col-12 reveal" src="https://www.tdmobiledetailing.com/_nuxt/img/hero-car-mobile.044e46d.png" alt="">
+                    <a href="../Request/request.html" class="reveal">
+                        <button class="col-12 text-white fs-5">Request a Quote</button>
+                    </a>
+                    <div class="col-12 intro-header__serve text-center mt-5 mb-5">
+                        <div class="fs-5 reveal">Servicing area:</div>
+                        <div class="fs-5 reveal">Lakewood Ranch - Sarasota</div>
+                        <div class="intro-header__serve-email fs-5 mt-4 reveal">truedetailsrq@yahoo.com</div>
+                        <div class="fs-5 reveal">941-735-5738</div>
+                        <a href="#statistic" class="scroll-mouse fs-2 mb-5 mt-3 reveal">
+                            <i class="fa-solid fa-computer-mouse"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="intro-header row d-none d-lg-block position-relative">
+                    <div class="col-12 intro-header-founder d-flex align-items-top position-relative left_animate">
+                        <div class="intro-header-founder__line line me-3 left_animate"></div>    
+                        <div>
+                            <h1 class="fw-bold fs-2">Founded on Passion.</h1>
+                            <h1 class="fw-bold fs-2">Built on Service.</h1>
+                            <h1 class="fw-bold fs-2">Measured on Results.</h1>
+                        </div>
+                        <img class="right_animate position-absolute" src="https://www.tdmobiledetailing.com/_nuxt/img/hero-car-mobile.044e46d.png" alt="">
+                    </div>
+                    <a class="right_animate col-3 d-inline-block position-absolute end-0 top-50 translate-middle-y group-list-link" href="">
+                        <p class="mb-4">Quality <br> over quantity</p>
+                        <img src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-1.7e75bfa.png" alt="">
+                    </a>
+                    <a href="../Request/request.html" class="left_animate">
+                        <button class="col-3 text-white fs-5 mt-5">Request a Quote</button>
+                    </a>
+                    <div class="left_animate col-12 intro-header__serve text-center mt-5 mb-5 d-flex align-items-center">
+                        <div class="me-5">
+                            <a href="#statistic" class="scroll-mouse fs-2">
+                                <i class="fa-solid fa-computer-mouse"></i>
+                            </a>
+                        </div>
+                        <div class="me-5">
+                            <div class="intro-header__serve-email fs-6">truedetailsrq@yahoo.com</div>
+                            <div class="fs-6">941-735-5738</div>
+                        </div>
+                        <div class="me-5">
+                            <div class="fs-6">Servicing area:</div>
+                            <div class="fs-6 color-main">Lakewood Ranch - Sarasota</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reveal" id="statistic">
+            <div class="statistic_full">
+                <div class="container pt-5 pb-5">
+                    <div class="row gx-3 align-items-center">
+                        <div class="col-6 left_animate">
+                            <div class="d-flex text-white align-items-top">
+                                <div class="line me-3"></div>
+                                <h1 class="">Based on <br> Experience</h1>
+                            </div>
+                            <div class="play-video text-white mt-4">
+                                <div class="d-flex align-items-center">
+                                    <i class="d-flex align-items-center justify-content-center rounded-circle fa-solid fa-play me-3"></i>
+                                    <h3 class="">Watch <br> the video</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 bg-dark text-white pt-5 pb-5 pe-4 ps-4 right_animate">
+                            <p class="mt-5 mb-5 fs-4 fw-bold">Statistic</p>
+                            <div class="d-flex flex-column mb-5">
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between mb-2">
+                                        <div class="d-flex align-items-center me-4">
+                                            <div class="line"></div>
+                                            <div style="font-size: 40px;" class="ms-4">6+</div>
+                                        </div>
+                                        <div class="fs-5">Years of Experience</div>
+                                    </div>
+                                </div>
+                                <div class="w-100 mt-3 border-top pt-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center me-4">
+                                            <div class="line"></div>
+                                            <div style="font-size: 50px;" class="ms-4">5k+</div>
+                                        </div>
+                                        <div class="fs-5">Years of Experience</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reveal" id="Service">
+            <div class="service">
+                <div class="container">
+                    <div class="row position-relative mb-5">
+                        <div class="col-12 col-lg-4 mb-5">
+                            <div class="sticky-lg-top pt-5">
+                                <div class="d-flex">
+                                    <div class="line me-3"></div>
+                                    <h1 class="text-white">Complex Service</h1>
+                                </div>
+                                <p class="text-secondary mt-4 mb-4">Detailing has a different meaning with everyone, which is why with True Detail, we offer multiple services to bring back gloss and clarity, all the way up to restorative level detail to bring a vehicle to a like-new condition or better.</p>
+                                <div class="fw-bold text-white fs-3">Servicing area:</div>
+                                <div class="location fs-5">Lakewood Ranch - Sarasota</div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8 pt-5">
+                            <div class="row gy-5">
+                                <div class="col-12 right_animate">
+                                    <div class="service_detail">
+                                        <div class="d-flex">
+                                            <img class="service_detail-img h-100 me-3" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-service-1.9d32818.png" alt="">
+                                            <div class="w-100 text-white ms-5">
+                                                <h1 class="fs-3">Paint Protection Film</h1>
+                                                <p class="text-secondary">We use the clearest, best performing film in the industry with unparalleled install quality. From front-end protection to fully wrapping a vehicle, we can customize a protection package to your exact needs.</p>
+                                                <span class="detail fs-4 pb-2">More details</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 right_animate">
+                                    <div class="service_detail">
+                                        <div class="d-flex">
+                                            <img class="service_detail-img h-100 me-3" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-service-2.4e3d3d8.png" alt="">
+                                            <div class="w-100 text-white ms-5">
+                                                <h1 class="fs-3">Paint Protection Film</h1>
+                                                <p class="text-secondary">We use the clearest, best performing film in the industry with unparalleled install quality. From front-end protection to fully wrapping a vehicle, we can customize a protection package to your exact needs.</p>
+                                                <span class="detail fs-4 pb-2">More details</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 right_animate">
+                                    <div class="service_detail">
+                                        <div class="d-flex">
+                                            <img class="service_detail-img h-100 me-3" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-service-3.6c6787a.png" alt="">
+                                            <div class="w-100 text-white ms-5">
+                                                <h1 class="fs-3">Paint Protection Film</h1>
+                                                <p class="text-secondary">We use the clearest, best performing film in the industry with unparalleled install quality. From front-end protection to fully wrapping a vehicle, we can customize a protection package to your exact needs.</p>
+                                                <span class="detail fs-4 pb-2">More details</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 right_animate">
+                                    <div class="service_detail">
+                                        <div class="d-flex">
+                                            <img class="service_detail-img h-100 me-3" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-service-4.4b52ade.png" alt="">
+                                            <div class="w-100 text-white ms-5">
+                                                <h1 class="fs-3">Paint Protection Film</h1>
+                                                <p class="text-secondary">We use the clearest, best performing film in the industry with unparalleled install quality. From front-end protection to fully wrapping a vehicle, we can customize a protection package to your exact needs.</p>
+                                                <span class="detail fs-4 pb-2">More details</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 right_animate">
+                                    <div class="service_detail">
+                                        <div class="d-flex">
+                                            <img class="service_detail-img h-100 me-3" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-service-5.642d19a.png" alt="">
+                                            <div class="w-100 text-white ms-5">
+                                                <h1 class="fs-3">Paint Protection Film</h1>
+                                                <p class="text-secondary">We use the clearest, best performing film in the industry with unparalleled install quality. From front-end protection to fully wrapping a vehicle, we can customize a protection package to your exact needs.</p>
+                                                <span class="detail fs-4 pb-2">More details</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 right_animate">
+                                    <div class="pt-5 pb-3 ps-4 pe-4 d-flex flex-column request_quote justify-content-center align-items-center flex-lg-row align-items-lg-center border-solid">
+                                        <img class="me-3" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-service-request.8d93e1b.png" alt="">
+                                        <h3 class="text-center fw-bold text-white mt-5 mb-5 align-self-stretch p-3">Ready to care for your car ?</h3>
+                                        <a href="../Request/request.html" class="btn-quote d-block text-decoration-none">
+                                            <button class="p-3 d-block d-lg-inline-block border-0 text-white">Request a Quote</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 pb-5">
+                        <div class="col-12 reveal">
+                            <div class="img-container">
+                                <div class="image before" style="background-image:url('https://www.tdmobiledetailing.com/_nuxt/img/homepage-compare-1.19ab375.png');"></div>
+                                <div class="image after" style="background-image:url('https://www.tdmobiledetailing.com/_nuxt/img/homepage-compare-2.65d8d16.png');"></div>
+                                <input type="range" class="slider" min="1" max="100" value="50" />
+                                <div class="slider-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reveal" id="Truedetail">
+            <div class="True-Detail">
+                <div class="container">
+                    <div class="row pt-5 pb-5">
+                        <div class="col-12 col-lg-4 left_animate">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex mb-3">
+                                        <div class="line me-3"></div>
+                                        <h1 class="fw-bold">About <br> TrueDetail</h1>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p class="fs-5 mt-4 mb-5 text-secondary">True Detail was created for owners of fine automobiles who share the same appreciation for the art and beauty of cars that we do. We offer comprehensive yet flexible detailing and protection services to suit our clients’ needs, and we do it with unequaled quality, passion, and professionalism.</p>
+                                    <div class="d-flex flex-column">
+                                        <div class="fs-5 yahoo">truedetailsrq@yahoo.com</div>
+                                        <div class="fs-5 phone">941-735-57793</div>
+                                        <div class="fs-5">8233 Blaikie Ct, Sarasota, FL 34240</div>
+                                        <div class="fs-5 d-flex align-items-center insta mt-5 mb-5">
+                                            <i class="fs-2 fa-brands fa-instagram me-3"></i>
+                                            @truedetailsrq
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-8 right_animate">
+                            <div class="detail-image position-relative">
+                                <img class="w-100 object-fit-contain" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-about-1.f1842aa.png" alt="">
+                                <a class="items-link d-flex align-items-center position-absolute top-50 start-50 translate-middle">
+                                    <i class="text-white fa-solid fa-play rounded-circle d-flex align-items-center justify-content-center me-3"></i>
+                                    <div class="text-white fw-bold">Watch <br> the video</div>  
+                                </a>
+                            </div>
+                            <div class="detail-imaged_statistic d-flex mt-5 flex-column justify-content-center flex-lg-row justify-content-lg-between">
+                                <div class="d-flex align-items-center justify-content-between p-4" style="border-bottom: 1px solid #b8b8b8;">
+                                    <div class="d-flex number align-items-center">
+                                        <div class="line me-4"></div>
+                                        <div class="">6+</div>
+                                    </div>
+                                    <div class="experience fs-5 pe-5">Years of <br> experience</div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between p-4">
+                                    <div class="d-flex number align-items-center">
+                                        <div class="line me-4"></div>
+                                        <div class="">5K+</div>
+                                    </div>
+                                    <div class="experience fs-5 pe-5">Years of <br> experience</div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column mt-5 flex-lg-row align-items-center">
+                                <button class="w-100 border-0 text-white fw-bold p-4 fs-5 mb-4 mb-lg-0">Learn more</button>
+                                <p class="text-center mt-3 ms-3 text-secondary">While we strive to provide results nothing short of perfection, just as important is ensuring we act along side our core values.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reveal" id="clients">
+            <div class="container mt-5 mb-5">
+                <div class="d-flex align-items-center mb-5 mt-5">
+                    <div class="line me-4 mt-0"></div>
+                    <h1>Client's Reviews</h1>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <img src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-review-1.53f41b6.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="mt-5 mb-5 fs-2 fw-bold">
+                                    <span class="d-inline-block text-center fw-bold carousel-span rounded-circle text-white fs-4">T</span>
+                                    Tim koerner
+                                </div>
+                                <p class="mt-4 mb-4 text-secondary">For years now, I have relied upon the first rate skills of True Detail’s Jacob Cline to take care of my car’s appearance. He is simply amazing. My cars have never looked better, and his dedication shines as brightly as my auto’s paint.</p>
+                                <p class="mt-4 mb-4 text-secondary">Reasonably priced, dependable and very pleasant to interact with, I truly look forward to my appointments with him. Top shelf service with a smile, couldn’t ask for better.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <img src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-review-2.cf87c1f.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="mt-5 mb-5 fs-2 fw-bold">
+                                    <span class="d-inline-block text-center fw-bold carousel-span rounded-circle text-white fs-4">T</span>
+                                    Tim koerner
+                                </div>
+                                <p class="mt-4 mb-4 text-secondary">For years now, I have relied upon the first rate skills of True Detail’s Jacob Cline to take care of my car’s appearance. He is simply amazing. My cars have never looked better, and his dedication shines as brightly as my auto’s paint.</p>
+                                <p class="mt-4 mb-4 text-secondary">Reasonably priced, dependable and very pleasant to interact with, I truly look forward to my appointments with him. Top shelf service with a smile, couldn’t ask for better.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <img src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-review-3.6201e67.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div class="mt-5 mb-5 fs-2 fw-bold">
+                                    <span class="d-inline-block text-center fw-bold carousel-span rounded-circle text-white fs-4">T</span>
+                                    Tim koerner
+                                </div>
+                                <p class="mt-4 mb-4 text-secondary">For years now, I have relied upon the first rate skills of True Detail’s Jacob Cline to take care of my car’s appearance. He is simply amazing. My cars have never looked better, and his dedication shines as brightly as my auto’s paint.</p>
+                                <p class="mt-4 mb-4 text-secondary">Reasonably priced, dependable and very pleasant to interact with, I truly look forward to my appointments with him. Top shelf service with a smile, couldn’t ask for better.</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon button-slider" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon button-slider" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </section>
+        <section class="reveal" id="carSlider" class="pt-5 position-relative">
+            <a class="position-absolute rounded-circle d-flex align-items-center justify-content-center car-slider btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="position-absolute rounded-circle d-flex align-items-center justify-content-center car-slider btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex">
+                      <div class="mb-3">
+                        <div class="card">
+                          <img class="img-fluid w-100" alt="100%x280" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-slider-work-1.d1b4ed7.png">
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="card">
+                          <img class="img-fluid w-100" alt="100%x280" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-slider-work-2.1a5115f.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex">
+                      <div class="mb-3">
+                        <div class="card">
+                          <img class="img-fluid w-100" alt="100%x280" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-slider-work-3.c1b8fb3.png">
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="card">
+                          <img class="img-fluid w-100" alt="100%x280" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-slider-work-4.ae46374.png">
+                        </div>
+                      </div>       
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-flex">
+                      <div class="mb-3">
+                        <div class="card">
+                          <img class="img-fluid w-100" alt="100%x280" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-slider-work-5.d3b7a60.png">
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <div class="card">
+                          <img class="img-fluid w-100" alt="100%x280" src="https://www.tdmobiledetailing.com/_nuxt/img/homepage-slider-work-6.28adbb8.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 left_animate">
+                    <div class="request_quote">
+                        <div class="d-flex">
+                            <div class="line me-4"></div>
+                            <h2 class="text-white">Ready to care for your car?</h2>
+                        </div>
+                        <a href="../Request/request.html">
+                            <button class="text-white border-0 p-3 w-100 mt-5 mb-5">Request a Quote</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 order-lg-3 reveal">
+                    <div class="contact mb-5">
+                        <h3 class="text-white">Contact us</h3>
+                        <div class="yahoo mb-2 mt-4">truedetailsrq@yahoo.com</div>
+                        <div class="phone mb-2">941-735-5738</div>
+                        <div class="locate mb-2">8233 Blaikie Ct, Sarasota, FL 34240</div>
+                        <div class="weekdays mb-2 text-white mt-4">
+                            <span class="text-secondary">Mon-Fri:</span>
+                            9:00 am - 5:00 pm
+                        </div>
+                        <div class="weekends mb-2 text-white">
+                            <span class="text-secondary">Sat - Sun:</span>
+                            by appointment
+                        </div>
+                        <div class="social text-white mt-4">
+                            <i class="fa-brands fa-instagram fs-3"></i>
+                            @truedetailsrq
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 order-lg-2 right_animate">
+                    <div class="home_footer">
+                        <p class="text-secondary">Home</p>
+                        <p class="text-secondary">Paint protection film</p>
+                        <p class="text-secondary">Ceramic coatings</p>
+                        <p class="text-secondary">Paint correction</p>
+                        <p class="text-secondary">Car Detailing</p>
+                        <p class="text-secondary">Window tint</p>
+                        <p class="text-secondary">About</p>
+                        <p class="text-secondary">Contact</p>
+                        <p class="text-secondary">Request a quote</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-lg-6">
+                    <img class="text-secondary" src="../logo.png" alt="">                    
+                </div>
+                <div class="col-12 col-lg-6 mt-4">
+                    <p class="text-secondary d-lg-inline-block">Copyright © 2022 by TrueDetail.</p>
+                    <p class="text-secondary d-lg-inline-block">All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./main.js"></script>
+</html>

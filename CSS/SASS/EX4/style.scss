@@ -1,0 +1,77 @@
+$header:red;
+@import 'mixins';
+@mixin framePic($border,$padding,$radius) {
+    border:$border;
+    padding: $padding;
+    border-radius: $radius;
+}
+@mixin img($radius) {
+    border-radius: $radius;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.container {
+    .title {
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        $header:purple;
+        color: $header;
+    }
+    .wrap {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        .imgage:nth-child(1) {
+            @include framePic(2px solid $color-border,$padding,$radius);       
+            img {
+                @include img(0);
+            }
+        }
+        .imgage:nth-child(2){
+            @include framePic(2px dotted $color-border,$padding,$radius);       
+            img {
+                @include img(0);
+            }
+        }   
+        .imgage:nth-child(3){
+            @include framePic(2px solid green,$padding,$radius);       
+            img {
+                @include img(4px);
+            }
+        }
+        .imgage:nth-child(4) {
+            @include framePic(2px solid red,20px,20px);       
+            img {
+                @include img($radius);
+            }
+        }
+        .imgage:nth-child(5){
+            @include framePic(2px dashed purple,20px,50%);       
+            img {
+                @include img(50%);
+            }
+        }
+        .imgage:nth-child(6){
+            @include framePic(2px solid $color-border,20px,50%);       
+            img {
+                @include img(50%);
+            }
+        }
+    } 
+    @media screen and (min-width: 470px) and (max-width:768px) {
+        .wrap {
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+        }
+    }
+    @media screen and (min-width: 769px){
+        .wrap {
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+        }
+    }
+}
