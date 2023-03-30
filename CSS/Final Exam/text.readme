@@ -1,0 +1,26 @@
+//////////////////
+
+
+html --> bs5
+1. Row, column
+2. fixed-top, position-absolute, position-relative, container,flexbox
+3. text ==> text-align, padding,margin,d-block,inline-block,img-fluid
+width, height,font-size,
+4. Carousel multiple items
+
+
+//////////////////
+scss
+
+@mixin
+@include
+$,&
+class
+
+//////////////////
+js
+
+1. Active close Btn
+2. Move to top
+3. slide before after img
+4. Hidden when scrolling
